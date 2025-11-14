@@ -70,9 +70,17 @@ body {
 
 .logo img {
   height: 100px;
+  width: 100px;
   display: block;
-  background: transparent;
-  mix-blend-mode: multiply;
+  background: inherit;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: 0 8px 20px rgba(124, 16, 34, 0.3);
 }
 
 .main-nav ul {
@@ -211,7 +219,7 @@ body {
 }
 
 .btn.ghost {
-  background: transparent;
+  background: in;
   border-color: rgba(0, 0, 0, 0.12);
   color: var(--text);
 }
